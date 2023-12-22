@@ -393,13 +393,13 @@ export default {
         // 尝试压缩图片
         try {
           let file = files[i]
-          if (enableCompressRegex.test(file.type)) {
-            try {
-              file = await this.compressImg(file)
-            } catch (error) {
-              throw new Error('compress-fail')
-            }
-          }
+          // if (enableCompressRegex.test(file.type)) {
+          //   try {
+          //     file = await this.compressImg(file)
+          //   } catch (error) {
+          //     throw new Error('compress-fail')
+          //   }
+          // }
           /**
            * 上传过程中
            * @property {string} name - 当前上传的图片名称
